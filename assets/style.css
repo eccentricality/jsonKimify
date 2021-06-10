@@ -15,6 +15,7 @@ html, body {
     padding: 0;
     margin: 0;
     color: var(--primaryText);
+    font-family: 'Gudea', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6, strong {
@@ -26,16 +27,15 @@ h1 {font-size: 56px}; h2 {font-size: 36px}; h3 {font-size: 28px}; h4 {font-size:
 
 p, li, span, label, input, textarea {
     color: var(--primaryText);
-    font-family: 'Actor', sans-serif;
-    font-family: 'Gudea', sans-serif;
+    /* font-family: 'Actor', sans-serif;
+    font-family: 'Gudea', sans-serif; */
 }
 
 a {
     text-decoration: none;
-    color: var(--primaryDark);
-    font-family: 'Actor', sans-serif;
-    font-family: 'Gudea', sans-serif;
-    font-weight: bold;
+    color: var(--primaryLight);
+    /* font-family: 'Actor', sans-serif;
+    font-family: 'Gudea', sans-serif; */
 }
 
 ul {
@@ -75,7 +75,7 @@ ul {
         'left-col right-col'
     ;
 
-    background-color: var(--secondary);
+    background-color: var(--secondaryLight);
     border: 1px solid var(--border);
 
 
@@ -90,7 +90,7 @@ ul {
     align-items: center;
     grid-area: nav-wrapper;
     border-bottom: 1px solid var(--border);
-    background-color: var(--secondaryLight);
+    background-color: var(--secondary);
 }
 
 #themeInstructions {
@@ -109,12 +109,13 @@ ul {
     width: 70px;
     margin: 2px;
     border: 2px solid var(--border);
+    opacity: .5;
 
     cursor: pointer;
 }
 
 .themeBtns:hover {
-    border-width: 3px;
+    opacity: 1;
 }
 
 /* default color scheme*/
@@ -151,6 +152,8 @@ ul {
 
 .leftCol {
     grid-area: left-col;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 #profilePic {
@@ -162,12 +165,79 @@ ul {
     border: 2px solid var(--border);
 }
 
-#aboutMeTitle {
+#introQuote {
     text-align: center;
 }
 
 .rightCol {
+    display: grid;
     grid-area: right-col;
+    align-content: center;
+
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+#introShadow {
+    background-color: var(--primaryDark);
+    width: 300px;
+    height: 90px;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+#introSection {
+    position: relative;
+    width: 300px;
+    border: 3px solid var(--primaryLight);
+    background-color: var(--primary);
+    padding: 15px;
+}
+
+.introBox {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    border: 3px solid var(--primaryLight);
+    background-color: var(--primary);
+}
+
+#cornerTL {
+    top: -5px;
+    left: -5px;
+}
+
+#cornerTR {
+    top: -5px;
+    right: -5px;
+}
+
+#cornerBL {
+    bottom: -5px;
+    left: -5px;
+}
+
+#cornerBR {
+    bottom: -5px;
+    right: -5px;
+}
+
+.aboutMeWrapper {
+    display: grid;
+    /* instead of 1fr, 1fr, line of code to auto fit as many columns possible in row, repeat with min of 320px and naturally stack if smaller */
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#skillsList {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--primaryDark);
+}
+
+#socialImg {
+    width: 100%;
 }
 
 @media screen and (max-width: 1200px) {
@@ -176,7 +246,20 @@ ul {
     }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 820px) {
+    .headingWrapper {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            'nav-wrapper'
+            'left-col'
+            'right-col'
+        ;
+    }
+
+    .rightCol {
+        justify-content: center;
+    }
+    
     .themeBtns {
         width: 40px;
     }
