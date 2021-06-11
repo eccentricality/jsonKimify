@@ -14,7 +14,7 @@
     </head>
     <body>
 
-        <section class="style1">
+        <section class="style1" id="topSection">
             <div class="mainContainer">
                 <div class="nameWrapper">
                     <h1>Hi, I'm Jason Kim</h1>
@@ -24,17 +24,19 @@
 
                         <div class="navWrapper">
 
-                            <h5 id="themeInstructions">COLOR SCHEMES:</h5>
+                            <!-- <h5 id="themeInstructions">COLOR SCHEMES:</h5>
 
                             <div class="themesWrapper">
                                 <div class="themeBtns" id="btn1"></div>
                                 <div class="themeBtns" id="btn2"></div>
                                 <div class="themeBtns" id="btn3"></div>
                                 <div class="themeBtns" id="btn4"></div>
-                            </div>
+                            </div> -->
 
                             <ul id="navigation">
-                                <li><a href="#">CONTACT</a></li>
+                                <li><a href="#aboutMeSection">ABOUT ME</a></li>
+                                <li><a href="#myProjectsSection">MY PROJECTS</a></li>
+                                <li><a href="#contactMeSection">CONTACT ME</a></li>
                             </ul>
 
                         </div>
@@ -51,7 +53,7 @@
                                 <div id="introSection">
                                     <div class="introBox" id="cornerTL"></div>
                                     <div class="introBox" id="cornerTR"></div>
-                                    <h6>Full Stack Developer Aspirant: <br>User-Focused Web Developer skilled in JavaScript, HTML and CSS with extreme levels of aptitude and penchant for knowledge.</h6>
+                                    <h2><span>Full Stack Developer Aspirant: </span><br>User-Focused Web Developer skilled in JavaScript, HTML and CSS with extreme levels of aptitude and penchant for knowledge.</h2>
                                     <div class="introBox" id="cornerBL"></div>
                                     <div class="introBox" id="cornerBR"></div>
                                 </div>
@@ -62,7 +64,7 @@
             </div>
         </section>
 
-        <section class="style2">
+        <section class="style2" id="aboutMeSection">
 
             <div class="mainContainer">
 
@@ -70,19 +72,19 @@
 
                     <div class="aboutMe">
 
-                        <h4>ABOUT ME</h4>
-
+                        <h2>ABOUT ME</h2>
+                        <br>
                         <p>Trained professional with 10 years of learning experiences within industries ranging from grassroots, to legal, to financial institutions; bringing unparalleled levels of soft skills and professionalism, coupled with intelligence and analytics.</p>
-                        
+                        <br>
                         <p>Highly technical by nature and a team player, successful on numerous occasions in a team environment collaborating across diverse groups both as a leader and a teammate; for example, my times as a civic engagement associate as well as teammate for Bootcamp projects.</p>
-                        
+                        <br>
                         <p>Eager candidate looking to bring these experiences to add immense values as well as learn and continuously adapt in a collaborative environment.</p>
 
                         <hr>
 
-                        <h4>PRIMARY FOCUS</h4>
-
-                        <p>Deadly combination of technical and soft skills: <br><a target="_blank" href="./assets/resume.pdf">download my resume</a></p>
+                        <h4>HIGHLIGHTS</h4>
+                        <br>
+                        <p>Deadly combination of technical and soft skills: <a target="_blank" href="./assets/resume.pdf">download resume</a></p>
         
                         <br>
 
@@ -97,7 +99,7 @@
         
                             <ul>
                                 <li>Node.js</li>
-                                <li>API Endpoint</li>
+                                <li>Postman API</li>
                                 <li>Agile & Waterfall Methodologies</li>
                             </ul>
                             
@@ -109,7 +111,7 @@
 
                         <img id="socialImg" src="assets/images/fullStack.jpeg">
                         <h3>find me on GitHub & LinkedIn</h3>
-
+                        <br>
                         <a target="_blank" href="https://github.com/eccentricality">GitHub: eccentricality</a>
                         <br>
                         <a target="_blank" href="https://www.linkedin.com/in/jasondotkim/">LinkedIn: jasondotkim</a>
@@ -122,16 +124,122 @@
 
         </section>
 
-        <section class="style1">
+        <section class="style1" id="myProjectsSection">
             <div class="mainContainer">
-                My Portfolio
+                <br>
+                <h2>MY PROJECTS</h2>
+                <br>
+                <div class="projectsWrapper">
+
+                    <div class="projects">
+                        <img class="projectThumbnail" src="./assets/images/hollywoodHackers.gif">
+                        <div class="projectDetails">
+                            <h6 class="projectTitle">MOVIE DATA SEARCH</h6>
+                            <br>
+                            <p class="projectInfo">Users can search for their favorite movies to obtain list of actors and fun facts about the movie.</p>
+                            <br>
+                            <a target="_blank" href="https://github.com/eccentricality/hollywoodHackers">Repository</a>
+                            :
+                            <a target="_blank" href="https://eccentricality.github.io/hollywoodHackers/">Deployment</a>
+                        </div>
+                    </div>
+
+                    <div class="projects">
+                        <img class="projectThumbnail" src="./assets/images/weatherSearch.gif">
+                        <div class="projectDetails">
+                            <h6 class="projectTitle">WEATHER FORECAST</h6>
+                            <br>
+                            <p class="projectInfo">Users can search for a forecast of a city, state, or country. Retains search history in local storage.</p>
+                            <br>
+                            <a target="_blank" href="https://github.com/eccentricality/weatherSearch">Repository</a>
+                            :
+                            <a target="_blank" href="https://eccentricality.github.io/weatherSearch/">Deployment</a>
+                        </div>
+                    </div>
+
+                    <div class="projects">
+                        <img class="projectThumbnail" src="./assets/images/dailyScheduler.gif">
+                        <div class="projectDetails">
+                            <h6 class="projectTitle">DAILY SCHEDULER</h6>
+                            <br>
+                            <p class="projectInfo">Users can locally store daily to-do items in each time slot by the hour. Date and time will update to present.</p>
+                            <br>
+                            <a target="_blank" href="https://github.com/eccentricality/workDay">Repository</a>
+                            :
+                            <a target="_blank" href="https://eccentricality.github.io/workDay/">Deployment</a>
+                        </div>
+                    </div>
+
+                    <div class="projects">
+                        <img class="projectThumbnail" src="./assets/images/codeQuiz.gif">
+                        <div class="projectDetails">
+                            <h6 class="projectTitle">CODE QUIZ</h6>
+                            <br>
+                            <p class="projectInfo">Users can take a timed quiz. Participant will lose remaining time if answers are incorrect. Score saving optional.</p>
+                            <br>
+                            <a target="_blank" href="https://github.com/eccentricality/codeQuiz">Repository</a>
+                            :
+                            <a target="_blank" href="https://eccentricality.github.io/codeQuiz/">Deployment</a>
+                        </div>
+                    </div>
+
+                    <div class="projects">
+                        <img class="projectThumbnail" src="./assets/images/rps.gif">
+                        <div class="projectDetails">
+                            <h6 class="projectTitle">ROCK, PAPER, SCISSORS</h6>
+                            <br>
+                            <p class="projectInfo">User can participate in an interactive game. Computer player will randomly generate a move in response to user.</p>
+                            <br>
+                            <a target="_blank" href="https://github.com/eccentricality/RPS">Repository</a>
+                            :
+                            <a target="_blank" href="https://eccentricality.github.io/RPS/">Deployment</a>
+                        </div>
+                    </div>
+
+                    <div class="projects">
+                        <img class="projectThumbnail" src="./assets/images/passwordGenerator.gif">
+                        <div class="projectDetails">
+                            <h6 class="projectTitle">PASSWORD GENERATOR</h6>
+                            <br>
+                            <p class="projectInfo">User can generate a password between <br>8-128 characters long. Lower case, upper case, numbers & symbols optional.</p>
+                            <br>
+                            <a target="_blank" href="https://github.com/eccentricality/pwGenerator">Repository</a>
+                            :
+                            <a target="_blank" href="https://eccentricality.github.io/003-HW-pwGen/">Deployment</a>
+                        </div>
+                    </div>
+
+                </div>
             </div>
+            <br>
         </section>
 
-        <section class="style2">
+        <section class="style2" id="contactMeSection">
             <div class="mainContainer">
-                Contact Info
+                <br>
+                <h2>CONTACT ME</h2>
+                <br>
+
+                <form id="contactForm">
+
+                    <label>NAME</label>
+                    <input class ="inputField" type="text" name="name">
+
+                    <label>SUBJECT</label>
+                    <input class ="inputField" type="text" name="name">
+
+                    <label>EMAIL</label>
+                    <input class ="inputField" type="text" name="name">
+
+                    <label>MESSAGE</label>
+                    <textarea class ="inputField" type="text" name="name"></textarea>
+
+                    <input id="submitBtn" type="submit" value="SEND">
+
+                </form>
+
             </div>
+
         </section>
 
         
