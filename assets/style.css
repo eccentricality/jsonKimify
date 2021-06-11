@@ -327,6 +327,44 @@ ul {
     }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 499px) {
+    .nameWrapper h1 {
+        font-size: 40px;
+    }
 
+    .navWrapper {
+        justify-content: center;
+    }
+
+    #navigation li {
+        font-size: 14px;
+    }
+    
+    #introShadow {
+        width: 200px;
+        height: 60px;
+        padding-left: 30px;
+        padding-top: 30px;
+    }
+    
+    #introSection {
+        width: 200px;
+        border: 3px solid var(--primaryLight);
+        background-color: var(--primary);
+        padding: 15px;
+    }
+
+    #introSection h2 {
+        font-size: 12px;
+    }
+
+    #introSection h2 span {
+        font-size: 14px;
+
+        -webkit-text-stroke-width: .2px;
+    }
+
+    .aboutMe p {
+        font-size: 12px;
+    }
 }
