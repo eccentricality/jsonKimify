@@ -45,13 +45,13 @@ ul {
 
 .style1 {
     background-color: var(--primary);
-    border-bottom: 1px solid var(--primaryText);
+    /* border-bottom: 1px solid var(--primaryText); */
     overflow: auto;
 }
 
 .style2 {
     background-color: var(--secondary);
-    border-bottom: 1px solid var(--secondaryText);
+    /* border-bottom: 1px solid var(--secondaryText); */
     overflow: auto;
 }
 
@@ -85,7 +85,7 @@ ul {
     ;
 
     background-color: var(--secondaryLight);
-    border: 1px solid var(--border);
+    /* border: 1px solid var(--border); */
     border-bottom: 0;
 
     /* https://html-css-js.com/css/generator/box-shadow/ */
@@ -98,7 +98,7 @@ ul {
     justify-content: flex-start;
     align-items: center;
     grid-area: nav-wrapper;
-    border-bottom: 1px solid var(--border);
+    /* border-bottom: 1px solid var(--border); */
     background-color: var(--secondary);
 }
 
@@ -125,7 +125,8 @@ ul {
     width: 200px;
     margin: 0 auto;
     object-fit: cover;
-    border: 2px solid var(--border);
+    border-radius: 100px;
+    /* border: 2px solid var(--border); */
 }
 
 #introQuote {
@@ -201,6 +202,7 @@ ul {
     padding-top: 30px;
     padding-bottom: 30px;
     gap: 80px;
+    background-color: var(--secondaryLight);
 }
 
 .aboutMeWrapper h2 {
@@ -243,7 +245,7 @@ ul {
 }
 
 .projects {
-    border: 1px solid var(--border);
+    /* border: 1px solid var(--border); */
 
     -webkit-box-shadow: 5px 7px 5px 2px rgba(0,0,0,0.86); 
     box-shadow: 5px 7px 5px 2px rgba(0,0,0,0.86);
@@ -273,7 +275,7 @@ ul {
     display: block;
     max-width: 800px;
     margin: 0 auto;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     padding: 15px;
     background-color: var(--secondaryDark);
     margin-bottom: 50px;
